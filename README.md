@@ -1,7 +1,10 @@
-# Hand Gesture Recognition System
+# Hand Gesture Recognition 
 
-A real-time hand gesture recognition system built using **Python**, **OpenCV**, **MediaPipe**, and **TensorFlow/Keras**.  
-This project detects hand gestures through a webcam and controls robot-like actions such as **GO**, **STOP**, and **RESUME** based on recognized gestures.
+Sign Language Translation System for Deaf Communication ✋🧠
+
+A real-time sign language translation system developed using **Python**, **OpenCV**, **MediaPipe**, and **TensorFlow/Keras** to help communicate with deaf and speech-impaired people through hand gesture recognition.
+
+The system captures hand gestures through a webcam, detects sign language gestures using deep learning, and translates them into understandable actions or commands in real time.
 
 The system also includes **face detection** for improved interaction logic and uses a trained CNN model for gesture classification.
 
@@ -47,21 +50,13 @@ Gesture_recog/
 
 ## ⚙️ How It Works
 
-1. Webcam captures live video.
-2. MediaPipe detects hand landmarks.
-3. Landmarks are passed to the CNN model.
-4. The model predicts the gesture.
-5. Based on the gesture:
-   - **stop** → Robot stops
-   - **peace** → Robot resumes/start
-6. Face detection ensures proper interaction handling.
+1. The webcam captures live video.
+2. MediaPipe detects hand landmarks from the user's hand.
+3. The extracted landmarks are passed to the trained CNN model.
+4. The model predicts the corresponding sign language gesture.
+5. The recognized gesture is translated into an action or communication output.
+6. Face detection improves interaction reliability..
 
-The project uses:
-- `Flag_to_GO = 0` → Stop
-- `Flag_to_GO = 1` → Normal operation
-- `Flag_to_GO = 2` → Resume/Start
-
----
 
 ## ✋ Supported Gestures
 
@@ -74,13 +69,16 @@ You can add more gestures by retraining the model.
 
 ---
 
-## 📸 Demo Workflow
 
-1. Run the application
-2. Show your hand in front of the webcam
-3. Perform a gesture:
-   - ✋ Stop gesture → System stops
-   - ✌️ Peace gesture → System resumes
+## ⚙️ How the System Works
+
+1. The webcam captures live video input from the user.
+2. MediaPipe detects hand landmarks from the captured hand gestures.
+3. The extracted hand landmark coordinates are sent to the trained CNN model.
+4. The deep learning model predicts the corresponding sign language gesture.
+5. The recognized gesture is translated into meaningful communication output in real time.
+6. Face detection is used to improve interaction accuracy and detection reliability.
+7. The translated gesture helps bridge communication between deaf and non-sign language users.  
 
 Press **Q** to exit.
 
@@ -173,25 +171,24 @@ This ensures gesture processing occurs under valid conditions.
 
 ## 🧪 Future Improvements
 
-- Add more gesture classes
+- Add complete sign language sentence translation
+- Convert gestures into speech output
+- Support multiple languages
 - Improve model accuracy
-- Integrate with IoT/robotics hardware
-- Add GUI interface
-- Use GPU acceleration
-- Deploy as a web application
-- Add voice feedback system
+- Mobile application integration
+- Real-time text generation
+- Cloud deployment support
 
 ---
 
 ## 📌 Applications
 
-- Robot control systems
-- Smart home automation
-- Touchless interfaces
-- Sign language recognition
-- Gaming controls
+- Deaf and mute communication systems
+- Smart assistive technologies
 - Human-computer interaction
-- Healthcare assistance systems
+- AI-based accessibility tools
+- Educational support systems
+- Healthcare communication assistance
 
 ---
 
